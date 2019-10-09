@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		BE6CEF7323426BE400DB1A5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEF7223426BE400DB1A5E /* AppDelegate.swift */; };
-		BE6CEF7523426BE400DB1A5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEF7423426BE400DB1A5E /* SceneDelegate.swift */; };
-		BE6CEF7723426BE400DB1A5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEF7623426BE400DB1A5E /* ViewController.swift */; };
 		BE6CEF7A23426BE400DB1A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6CEF7823426BE400DB1A5E /* Main.storyboard */; };
 		BE6CEF7C23426BE500DB1A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6CEF7B23426BE500DB1A5E /* Assets.xcassets */; };
 		BE6CEF7F23426BE500DB1A5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6CEF7D23426BE500DB1A5E /* LaunchScreen.storyboard */; };
 		BE6CEF8A23426BE500DB1A5E /* TwitkuyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEF8923426BE500DB1A5E /* TwitkuyTests.swift */; };
 		BE6CEF9523426BE500DB1A5E /* TwitkuyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEF9423426BE500DB1A5E /* TwitkuyUITests.swift */; };
+		BE6CEFCB234483E900DB1A5E /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6CEFC12344831000DB1A5E /* SwifteriOS.framework */; };
+		BE6CEFCC234483E900DB1A5E /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE6CEFC12344831000DB1A5E /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE6CEFCF2345CA4000DB1A5E /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEFCE2345CA4000DB1A5E /* PlaceViewController.swift */; };
+		BE6CEFD12345CB5E00DB1A5E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEFD02345CB5E00DB1A5E /* DataManager.swift */; };
+		BE6CEFD3234604E500DB1A5E /* ModelCrawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEFD2234604E500DB1A5E /* ModelCrawler.swift */; };
+		BE6CEFD523460D2800DB1A5E /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEFD423460D2800DB1A5E /* UserLocation.swift */; };
+		BE6CEFD7234CEF4200DB1A5E /* PlaceCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEFD6234CEF4200DB1A5E /* PlaceCustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +37,60 @@
 			remoteGlobalIDString = BE6CEF6E23426BE400DB1A5E;
 			remoteInfo = Twitkuy;
 		};
+		BE6CEFC02344831000DB1A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6CEFB82344831000DB1A5E /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		BE6CEFC22344831000DB1A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6CEFB82344831000DB1A5E /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		BE6CEFC42344831000DB1A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6CEFB82344831000DB1A5E /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		BE6CEFC62344831000DB1A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6CEFB82344831000DB1A5E /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		BE6CEFC82344831000DB1A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6CEFB82344831000DB1A5E /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE6CEFCD234483E900DB1A5E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE6CEFCC234483E900DB1A5E /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BE6CEF6F23426BE400DB1A5E /* Twitkuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitkuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6CEF7223426BE400DB1A5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE6CEF7423426BE400DB1A5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE6CEF7623426BE400DB1A5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE6CEF7923426BE400DB1A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE6CEF7B23426BE500DB1A5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE6CEF7E23426BE500DB1A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +101,12 @@
 		BE6CEF9023426BE500DB1A5E /* TwitkuyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitkuyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6CEF9423426BE500DB1A5E /* TwitkuyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitkuyUITests.swift; sourceTree = "<group>"; };
 		BE6CEF9623426BE500DB1A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6CEFB82344831000DB1A5E /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "../../../Users/willa/Downloads/Swifter-master 3/Swifter.xcodeproj"; sourceTree = "<group>"; };
+		BE6CEFCE2345CA4000DB1A5E /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		BE6CEFD02345CB5E00DB1A5E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BE6CEFD2234604E500DB1A5E /* ModelCrawler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCrawler.swift; sourceTree = "<group>"; };
+		BE6CEFD423460D2800DB1A5E /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		BE6CEFD6234CEF4200DB1A5E /* PlaceCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6CEFCB234483E900DB1A5E /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +138,12 @@
 		BE6CEF6623426BE400DB1A5E = {
 			isa = PBXGroup;
 			children = (
+				BE6CEFB82344831000DB1A5E /* Swifter.xcodeproj */,
 				BE6CEF7123426BE400DB1A5E /* Twitkuy */,
 				BE6CEF8823426BE500DB1A5E /* TwitkuyTests */,
 				BE6CEF9323426BE500DB1A5E /* TwitkuyUITests */,
 				BE6CEF7023426BE400DB1A5E /* Products */,
+				BE6CEFCA234483E900DB1A5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,11 +161,10 @@
 			isa = PBXGroup;
 			children = (
 				BE6CEF7223426BE400DB1A5E /* AppDelegate.swift */,
-				BE6CEF7423426BE400DB1A5E /* SceneDelegate.swift */,
-				BE6CEF7623426BE400DB1A5E /* ViewController.swift */,
-				BE6CEF7823426BE400DB1A5E /* Main.storyboard */,
+				BE6CEFA423426C9900DB1A5E /* View */,
+				BE6CEFA323426C9300DB1A5E /* Controller */,
+				BE6CEFA223426C8900DB1A5E /* Model */,
 				BE6CEF7B23426BE500DB1A5E /* Assets.xcassets */,
-				BE6CEF7D23426BE500DB1A5E /* LaunchScreen.storyboard */,
 				BE6CEF8023426BE500DB1A5E /* Info.plist */,
 			);
 			path = Twitkuy;
@@ -128,6 +188,61 @@
 			path = TwitkuyUITests;
 			sourceTree = "<group>";
 		};
+		BE6CEFA223426C8900DB1A5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE6CEFD8234CEF5300DB1A5E /* Cell */,
+				BE6CEFD2234604E500DB1A5E /* ModelCrawler.swift */,
+				BE6CEFD02345CB5E00DB1A5E /* DataManager.swift */,
+				BE6CEFD423460D2800DB1A5E /* UserLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE6CEFA323426C9300DB1A5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE6CEFCE2345CA4000DB1A5E /* PlaceViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BE6CEFA423426C9900DB1A5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE6CEF7823426BE400DB1A5E /* Main.storyboard */,
+				BE6CEF7D23426BE500DB1A5E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE6CEFB92344831000DB1A5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE6CEFC12344831000DB1A5E /* SwifteriOS.framework */,
+				BE6CEFC32344831000DB1A5E /* SwifterMac.framework */,
+				BE6CEFC52344831000DB1A5E /* SwifterDemoiOS.app */,
+				BE6CEFC72344831000DB1A5E /* SwifterDemoMac.app */,
+				BE6CEFC92344831000DB1A5E /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE6CEFCA234483E900DB1A5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE6CEFD8234CEF5300DB1A5E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BE6CEFD6234CEF4200DB1A5E /* PlaceCustomTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +253,7 @@
 				BE6CEF6B23426BE400DB1A5E /* Sources */,
 				BE6CEF6C23426BE400DB1A5E /* Frameworks */,
 				BE6CEF6D23426BE400DB1A5E /* Resources */,
+				BE6CEFCD234483E900DB1A5E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +334,12 @@
 			mainGroup = BE6CEF6623426BE400DB1A5E;
 			productRefGroup = BE6CEF7023426BE400DB1A5E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BE6CEFB92344831000DB1A5E /* Products */;
+					ProjectRef = BE6CEFB82344831000DB1A5E /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BE6CEF6E23426BE400DB1A5E /* Twitkuy */,
@@ -226,6 +348,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BE6CEFC12344831000DB1A5E /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = BE6CEFC02344831000DB1A5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE6CEFC32344831000DB1A5E /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = BE6CEFC22344831000DB1A5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE6CEFC52344831000DB1A5E /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = BE6CEFC42344831000DB1A5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE6CEFC72344831000DB1A5E /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = BE6CEFC62344831000DB1A5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE6CEFC92344831000DB1A5E /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = BE6CEFC82344831000DB1A5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BE6CEF6D23426BE400DB1A5E /* Resources */ = {
@@ -259,9 +419,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE6CEF7723426BE400DB1A5E /* ViewController.swift in Sources */,
+				BE6CEFD7234CEF4200DB1A5E /* PlaceCustomTableViewCell.swift in Sources */,
+				BE6CEFCF2345CA4000DB1A5E /* PlaceViewController.swift in Sources */,
+				BE6CEFD12345CB5E00DB1A5E /* DataManager.swift in Sources */,
+				BE6CEFD523460D2800DB1A5E /* UserLocation.swift in Sources */,
+				BE6CEFD3234604E500DB1A5E /* ModelCrawler.swift in Sources */,
 				BE6CEF7323426BE400DB1A5E /* AppDelegate.swift in Sources */,
-				BE6CEF7523426BE400DB1A5E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +600,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YF2M6C4WM8;
 				INFOPLIST_FILE = Twitkuy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillaSaskara.Twitkuy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,6 +619,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YF2M6C4WM8;
 				INFOPLIST_FILE = Twitkuy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +627,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillaSaskara.Twitkuy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
