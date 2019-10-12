@@ -13,8 +13,6 @@
 		BE6CEF7F23426BE500DB1A5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6CEF7D23426BE500DB1A5E /* LaunchScreen.storyboard */; };
 		BE6CEF8A23426BE500DB1A5E /* TwitkuyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEF8923426BE500DB1A5E /* TwitkuyTests.swift */; };
 		BE6CEF9523426BE500DB1A5E /* TwitkuyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEF9423426BE500DB1A5E /* TwitkuyUITests.swift */; };
-		BE6CEFCB234483E900DB1A5E /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6CEFC12344831000DB1A5E /* SwifteriOS.framework */; };
-		BE6CEFCC234483E900DB1A5E /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE6CEFC12344831000DB1A5E /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE6CEFCF2345CA4000DB1A5E /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEFCE2345CA4000DB1A5E /* PlaceViewController.swift */; };
 		BE6CEFD12345CB5E00DB1A5E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEFD02345CB5E00DB1A5E /* DataManager.swift */; };
 		BE6CEFD3234604E500DB1A5E /* ModelCrawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CEFD2234604E500DB1A5E /* ModelCrawler.swift */; };
@@ -74,20 +72,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		BE6CEFCD234483E900DB1A5E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				BE6CEFCC234483E900DB1A5E /* SwifteriOS.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		BE6CEF6F23426BE400DB1A5E /* Twitkuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitkuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6CEF7223426BE400DB1A5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE6CEFCB234483E900DB1A5E /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +236,6 @@
 				BE6CEF6B23426BE400DB1A5E /* Sources */,
 				BE6CEF6C23426BE400DB1A5E /* Frameworks */,
 				BE6CEF6D23426BE400DB1A5E /* Resources */,
-				BE6CEFCD234483E900DB1A5E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

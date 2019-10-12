@@ -17,6 +17,10 @@ enum fetchingType {
 
 class DataManager: NSObject {
     
+    var dataHotelArray = [PlacesResponse]()
+    var distanceHotelArray = [Double]()
+    var imageHotelArray = [UIImage]()
+    
     let locationManager = UserLocation.instance
     static var instance = DataManager()
     private var baseUrlHotel = "https://maps.googleapis.com/maps/api/"
@@ -40,6 +44,7 @@ class DataManager: NSObject {
             let stringURL = baseUrlHotel + "place/nearbysearch/json?location=\(stringLatitude),\(stringLongtitude)&radius=\(stringRadius)&keyword=hotel&key=AIzaSyCaS7uhGH_kIV5emM0IfFcQCVhZYrdC1vc"
             
             guard let url = URL(string: stringURL) else { return }
+            print(url)
             
             URLSession.shared.dataTask(with: url) { (data, respone, error) in
                 //error
@@ -74,18 +79,6 @@ class DataManager: NSObject {
             print("ERROR: FAILED TO FETCH IMAGE : \(error)")
         }
         
-//
-//        URLSession.shared.dataTask(with: url) { (data, respone, error) in
-//            if let err = error{
-//                print("SOMETHING WRONG WITH URLSESSION IMAGE : \(err)")
-//                completion(.failure(err))
-//                return
-//            }
-//            if let image = UIImage(data: data!){
-//                completion(.success(image))
-//            }
-//
-//        }.resume()
     }
     
     

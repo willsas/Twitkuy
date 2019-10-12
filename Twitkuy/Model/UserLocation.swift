@@ -8,13 +8,15 @@
 
 import Foundation
 import CoreLocation
+import MapKit
 
 class UserLocation: NSObject, CLLocationManagerDelegate {
     
-     static let instance = UserLocation()
+    static let instance = UserLocation()
     
     var locationManager = CLLocationManager()
     var delegate:UserLocationDelegateProtocol!
+    var userLocation: CLLocation?
     
    
     
@@ -38,14 +40,29 @@ class UserLocation: NSObject, CLLocationManagerDelegate {
             if location.horizontalAccuracy > 0{
                 locationManager.stopUpdatingLocation()
                 locationManager.delegate = nil
-                delegate?.lastUserLocation(latitude: location.coordinate.latitude, longtitude: location.coordinate.longitude)
+                
+                self.delegate?.lastUserLocation(latitude: location.coordinate.latitude, longtitude: location.coordinate.longitude)
+                
+                self.userLocation = location
             }
         }
     }
+    
+    func calcDistanceTo(lat: Double, long: Double) -> Double{
+        let latitude = CLLocationDegrees(exactly: lat)
+        let longtitude = CLLocationDegrees(exactly: long)
+        let location =  CLLocation(latitude: latitude!, longitude: longtitude!)
+        let distance = Double(self.userLocation?.distance(from: location) ?? 0.0)
+        
+        return distance / 1000
+    }
+    
+    
 }
 
 
 protocol UserLocationDelegateProtocol {
     func lastUserLocation(latitude: Double, longtitude: Double)
+
 }
 

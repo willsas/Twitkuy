@@ -18,6 +18,7 @@ class DataPlaces: Codable{
     var name : String?
     var place_id : String?
     var photos: [DetailPhotos]?
+    var geometry : DataLocation?
 }
 
 //MARK: - Detail Places Crawler Response
@@ -25,6 +26,7 @@ class DetailResponse: Codable{
     var result: DataDetail?
     var status: String?
 }
+
 
 class DataDetail: Codable{
     var formatted_address : String?
@@ -64,6 +66,7 @@ class DetailReview: Codable{
     var text : String?
     var rating : String?
 }
+
 
 class DetailPhotos: Codable{
     var height : Int?
